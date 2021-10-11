@@ -28,5 +28,8 @@
 	// Color of Comments
 	"editor.tokenColorCustomizations": {
 		"comments": "#00a0eb"
+	},
+	"files.associations": {
+		".lintstagedrc": "json"
 	}
 }
