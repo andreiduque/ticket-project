@@ -26,3 +26,5 @@ export const findByCode = async (
 
 	return ticket;
 };
+
+export type FindByCodeType = typeof findByCode;

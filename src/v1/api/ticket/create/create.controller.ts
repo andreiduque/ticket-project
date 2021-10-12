@@ -1,6 +1,7 @@
 import { getRepository } from "typeorm";
 import { StatusCodeEnum } from "v1/enum/status-code";
 import { Route } from "v1/types/route";
+import { findByCode } from "../find-by-code/find-by-code.service";
 import { TicketEntity } from "../ticket.entity";
 import { create } from "./create.service";
 import { validation } from "./create.validation";
@@ -16,6 +17,7 @@ export const createController: Route = async (request, reply) => {
 		result = await create(
 			{
 				ticketRepository,
+				findByCodeService: findByCode,
 			},
 			validatedParams,
 		);
