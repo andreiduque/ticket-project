@@ -11,6 +11,7 @@
 		"@types/jsonwebtoken": "^8.5.5",
 		"@types/mongodb": "^3.6.20",
 		"@types/node": "^16.10.2",
+		"@vercel/ncc": "^0.31.1",
 		"dotenv": "^10.0.0",
 		"eslint": "^7.32.0",
 		"husky": "^7.0.2",
@@ -39,6 +40,8 @@
 		"test": "jest",
 		"test:cov": "jest --coverage",
 		"format": "eslint . --fix --quiet",
-		"lint": "eslint . --quiet"
+		"lint": "eslint . --quiet",
+		"build": "ncc build src/index.ts -o dist -m",
+		"start": "NODE_PATH=dist node dist/index.js"
 	}
 }
