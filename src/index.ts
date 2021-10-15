@@ -19,7 +19,7 @@ const server = async () => {
 	setUserController(fastify);
 	setTicketController(fastify);
 
-	fastify.listen(process.env.PORT!, err => {
+	fastify.listen(process.env.PORT!, process.env.HOST!, err => {
 		if (err) throw err;
 	});
 };
