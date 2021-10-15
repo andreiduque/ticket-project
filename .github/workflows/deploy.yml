@@ -16,7 +16,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          yarn test
+          JWT_PRIVATE_KEY=ABC yarn test
 
       - name: Build
         run: |
