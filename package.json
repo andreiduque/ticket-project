@@ -42,6 +42,6 @@
 		"format": "eslint . --fix --quiet",
 		"lint": "eslint . --quiet",
 		"build": "ncc build src/index.ts -o dist -m",
-		"start": "NODE_PATH=dist node dist/index.js"
+		"start": "node index.js"
 	}
 }
