@@ -29,7 +29,21 @@ Ticket project with user registration, user login and ticket creation through au
 
 - Run `yarn test` terminal command
 
-##
+## Used concepts
+
+- DDD architecture
+- Dependency injection
+- Unit testing
+
+## Dev tools
+
+- Husky
+- Eslint
+- Lint-staged
+- Nvm
+- EditorConfig
+
+## Routes
 
 ### **POST** - `/user/register` - User registration
 
@@ -161,11 +175,3 @@ Route that list up to 10 tickets by page number from query string (e.g. /ticket/
 #### Demonstration
 
 <img src="./resources/docs/list-tickets-by-page-route.png" alt="List of tickets in requested page">
-
-## Dev tools
-
-- Husky
-- Eslint
-- Lint-staged
-- Nvm
-- EditorConfig
